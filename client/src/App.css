@@ -1,6 +1,21 @@
+body {
+  background-image: url('./img/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 .App {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 200px;
+
+  background-color: transparent;
+  margin: auto;
+  padding: 1rem 2rem;
+  width: 80%;
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  height: 90vh;
 }
 
 .App-header {
@@ -12,4 +27,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Roboto+Mono:wght@200&display=swap');
+.headerText {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 6em;
+  margin-bottom: 1em;
+}
+
+.addText {
+  margin-bottom: 100px;
+  margin-left: 3em;
 }

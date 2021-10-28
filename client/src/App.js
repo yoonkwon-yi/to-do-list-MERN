@@ -74,8 +74,8 @@ function App () {
           <div className='App'>
             <header className='App.header'>
               <Header />
-              <TodoList />
               <ItemAddForm />
+              <TodoList />
             </header>
           </div>
         </Container>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Header = () => {
-  return <div>This is Header</div>
+  return <div className='headerText'>Task Tracker</div>
 }
 
 export default Header

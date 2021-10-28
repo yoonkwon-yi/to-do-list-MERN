@@ -4,12 +4,16 @@ import Grid from '@material-ui/core/Grid'
 import AddIcon from '@material-ui/icons/AddCircle'
 import TextField from '@material-ui/core/TextField'
 import React, { useContext, useState } from 'react'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import FormControl from '@material-ui/core/FormControl'
+import FormLabel from '@material-ui/core/FormLabel'
 
 const ItemAddForm = () => {
   const [text, setText] = useState('')
   const { addItem } = useContext(GlobalContext)
 
-  const onClick = e => {
+  const handleSubmit = e => {
+    e.preventDefault()
     const newItem = {
       text: text
     }
@@ -21,22 +25,36 @@ const ItemAddForm = () => {
   }
 
   return (
-    <>
-      <Grid container spacing={1} justify='center'>
-        <TextField
-          id='outlined-multiline-static'
-          label='What To Accomplish?'
-          multiline
-          rows={4}
-          value={text}
-          onChange={e => setText(e.target.value)}
-        />
-        <Button
-          startIcon={<AddIcon style={{ fontSize: '3em' }} />}
-          onClick={onClick}
-        />
-      </Grid>
-    </>
+    <form onSubmit={handleSubmit}>
+      <div className='addText'>
+        <Grid
+          container
+          alignItems='center'
+          justifyContent='center'
+          spacing={3}
+          justify='center'
+        >
+          <Grid item xs={6}>
+            <TextField
+              required
+              id='outlined-static'
+              label='Add What To Accomplish Today!'
+              style={{ width: '100%' }}
+              variant='outlined'
+              value={text}
+              onChange={e => setText(e.target.value)}
+            />
+          </Grid>
+          <Grid item>
+            <Button
+              className='buttonAdd'
+              startIcon={<AddIcon style={{ fontSize: '3em' }} />}
+              onClick={handleSubmit}
+            />
+          </Grid>
+        </Grid>
+      </div>
+    </form>
   )
 }
 
