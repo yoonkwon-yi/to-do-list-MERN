@@ -18,4 +18,9 @@ psd
 thumb
 sketch
 
+test.http
+
+config/config.env
+
+
 # End of https://www.toptal.com/developers/gitignore/api/react
