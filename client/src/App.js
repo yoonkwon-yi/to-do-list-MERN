@@ -12,26 +12,10 @@ import FormControlLabel from '@material-ui/core/FormControlLabel'
 
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles'
 import { createTheme } from '@material-ui/core/styles'
-import { orange, green } from '@material-ui/core/colors'
 
 import 'fontsource-roboto'
 
-import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
-
-import Paper from '@material-ui/core/Paper'
-
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
-
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
-import ListItemButton from '@mui/material/ListItemButton'
-import ListItemText from '@mui/material/ListItemText'
-import ListItemAvatar from '@mui/material/ListItemAvatar'
-import Avatar from '@mui/material/Avatar'
 
 import { GlobalProvider } from './context/GlobalState'
 
